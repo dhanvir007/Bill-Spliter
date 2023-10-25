@@ -1,71 +1,78 @@
-import { useState } from 'react'
+import React from 'react'
+import { FaUser } from 'react-icons/fa'
+import { FaIndianRupeeSign } from 'react-icons/fa6'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-       <div class="outer">
+      <div className="outer">
         <div>
-            <h3 align="center">BILL <br />
-                SPILL
-            </h3>
+          <h3 align="center">BILL <br />
+            SPILL
+          </h3>
         </div>
-        <div class="outer-box">
-            <div class="left">
+        <div className="outer-box">
+          <div className="left">
+            <div>
+              <div className="Bill">
+                <label>BILL</label>
                 <div>
-                    <label>BILL</label>
-                    <input type="text" id="bill" placeholder="&#8377"></input>
+                  <FaIndianRupeeSign /><input type="text" id="bill" placeholder="0"></input>
                 </div>
+
+              </div>
+            </div>
+            <div className='Tip'>
+              <p>Selected Tip %</p>
+              <div className='percentage'>
+                <button>5%</button>
+                <button>10%</button>
+                <button>15%</button>
+                <button>25%</button>
+                <button>50%</button>
+                <button>75%</button>
+              </div>
+              <div className='Number'>
+                <p>Number of People</p>
+                <div>
+                  <FaUser />
+                  <span><input type="number" id="people"></input></span>
+                  <span><button>+</button></span>
+                  <span id='numberpeople'>0</span>
+                  <span><button>-</button></span>
+                </div>
+              </div>
+              <button className='buttons'>Generate Bill</button>
+            </div>
+
+          </div>
+          <div className="right">
+            <div>
+              <div className="amount">
+                <p>Tip Amount <br />
+                <span>/ person</span>
+                </p>
+                <p> <FaIndianRupeeSign /> 0.00</p>
+
+              </div>
+              <div className="amount">
+                <p>Total <br />
+                  <span>/ person</span>
+                </p>
+                <p> <FaIndianRupeeSign /> 0.00</p>
+
+              </div>
             </div>
             <div>
-                <p>Selected Tip %</p>
-                <div>
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <button>75%</button>
-                </div>
-                <div>
-                    <p>Number of People</p>
-                    <div>
-                        <span class="material-symbols-outlined">
-                            person
-                            </span>
-                            <span><input type="number" id="people"></input></span>
-                            <span><button>+</button></span>
-                            <span>0</span>
-                            <span><button>-</button></span>
-                    </div>
-                </div>
-                <button>Generate Bill</button>
-            </div>            
-            <div class="right">
-                    <div>
-                        <div>
-                            <div>
-                                <span><p>Tip Amount<br />
-                                  / person</p>
-                                </span>
-                                <span id="tipamount">00</span>
-                                <span><p>Total<br />
-                                    / person</p>
-                                </span>
-                                <span id="totalamount">00</span>
-                            </div>
-                        </div>
-                        <div>
-                            <button>Reset</button>
-                        </div>
-                    </div>
-                    <div></div>
+              <button  className='button'>Reset</button>
             </div>
+          </div>
         </div>
-    </div>
-    </>  
+      </div>
+    </>
   )
 }
 

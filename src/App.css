@@ -1,1 +1,111 @@
+*{
+  margin:0;
+  padding:0;
+  /* box-sizing: border-box; */
+}
+body{
+  background-color: rgb(222, 199, 248);
 
+}
+
+.outer{
+
+  width:55vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+}
+.outer-box{
+  display:flex;
+  justify-content: space-between;
+  /* border:2px solid black; */
+  width:100%;
+  padding:2rem;
+  height:50%;
+  background-color: white;
+  border-radius: 1rem;
+}
+.right{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:rgb(142, 72, 223);
+  padding:1rem;
+  margin:0.5rem;
+  width:40%;
+  border-radius: 1rem;
+}
+.amount{
+  display:flex;
+  justify-content: space-between;
+}
+.button{
+  width:100%;
+  box-shadow: 1px 1px 1px gray;
+  padding:0.5rem;
+  color:rgb(141, 64, 212);
+  border-radius:0.5rem;
+}
+#bill{
+  text-align: right;
+}
+.percentage{
+  display:grid;
+  padding:0.3rem;
+  grid-template-columns: 4fr 4fr 4fr;
+  margin-bottom:0.8rem;
+}
+.percentage button{
+  margin:0.3rem;
+  padding:0.2rem;
+  border-radius:0.3rem;
+}
+#people{
+  width:60%;
+}
+.Number{
+    margin:0.8rem 0rem;
+}
+span button{
+  width:1.2rem;
+  margin:0.2rem;
+  height:1.3rem;
+
+}
+span input{
+  height:1.3rem;
+}
+.Bill input{
+  margin-bottom:0.7rem;
+  height:1.3rem;
+  font-size: 20px;
+  padding:0.1rem;
+  width:80%;
+}
+#numberpeople{
+   font-size: 20px;
+   padding:0.2rem;
+   background-color: white;
+   border:1px solid gray;
+}
+.Tip{
+  margin-top:0.5rem;
+}
+.buttons{
+  width:100%;
+  box-shadow: 1px 1px 1px gray;
+  padding:0.5rem;
+  color:rgb(141, 64, 212);
+  margin-top:0.5rem;
+  border-radius: 0.5rem;
+}
+.amount p{
+    font-size:1.3rem;
+}
+.amount span{
+  color:rgb(54, 52, 52);
+}
+  
