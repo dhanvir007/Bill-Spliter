@@ -32,7 +32,7 @@ body{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color:rgb(142, 72, 223);
+  background-color:rgb(219, 150, 247);
   padding:1rem;
   margin:0.5rem;
   width:40%;
@@ -71,8 +71,7 @@ body{
 }
 span button{
   width:1.2rem;
-  margin:0.2rem;
-  height:1.3rem;
+    height:1.3rem;
 
 }
 span input{
