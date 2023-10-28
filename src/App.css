@@ -1,22 +1,24 @@
 *{
   margin:0;
   padding:0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 body{
   background-color: rgb(222, 199, 248);
-
+  width:100vw;
+  height:100vh;
 }
 
 .outer{
 
-  width:55vw;
+  width:50vw;
   height:100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin:auto;
+
 }
 .outer-box{
   display:flex;
@@ -24,7 +26,7 @@ body{
   /* border:2px solid black; */
   width:100%;
   padding:2rem;
-  height:50%;
+  height:60%;
   background-color: white;
   border-radius: 1rem;
 }
@@ -33,14 +35,17 @@ body{
   flex-direction: column;
   justify-content: space-between;
   background-color:rgb(219, 150, 247);
-  padding:1rem;
+  padding:1rem 2rem;
   margin:0.5rem;
-  width:40%;
+  /* width:40%; */
   border-radius: 1rem;
 }
 .amount{
   display:flex;
   justify-content: space-between;
+}
+.amount p {
+  margin-right:2rem;
 }
 .button{
   width:100%;
